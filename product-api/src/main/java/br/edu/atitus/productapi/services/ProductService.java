@@ -10,7 +10,7 @@ import java.util.List;
 
 public interface ProductService {
     ProductResponse findById(Long id, String targetCurrency) throws Exception;
-    Page<List<ProductResponse>> findAll(Pageable pageable, String targetCurrency) throws Exception;
+    Page<ProductResponse> findAll(Pageable pageable, String targetCurrency) throws Exception;
     ProductEntity save(ProductRequest request) throws Exception;
 
 }
